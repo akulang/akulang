@@ -1,0 +1,14 @@
+include "stdio.h";
+include "stdlib.h";
+
+func @void print(@string str) {
+    extc printf("%s", str);
+};
+
+func @void println(@string str) {
+    extc printf("%s\n", str);
+};
+
+func @void clear() {
+    extc system("clear");
+};

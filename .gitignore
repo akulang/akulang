@@ -1,0 +1,15 @@
+# objects files
+
+build/*
+stdlib/build/*
+build/
+stdlib/build/
+*.o
+
+# output binaries
+bin/*
+bin/
+
+# vscode files
+.vscode/
+.vscode/*

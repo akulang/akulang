@@ -1,0 +1,12 @@
+from "io" {
+    @void println;
+    @void clear;
+};
+
+func @int main(@int argc, @stringp argv) {
+    @string hi = "hi";
+    println("yum");
+    clear();
+    println(hi);
+    return 0;
+};
