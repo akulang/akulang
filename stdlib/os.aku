@@ -1,0 +1,14 @@
+include "stdlib.h";
+include "stdio.h";
+
+func @void exitwith(@int status) {
+    extc exit(status);
+};
+
+func @void runcmd(@string command) {
+    extc system(command);
+};
+
+func @string getenviro(@string key) {
+    extc printf("unimplemented\n");
+};
