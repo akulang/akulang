@@ -224,7 +224,7 @@ Token Lexer::getToken() {
         }
     } else if(this->current == '@') {
         int startPos = this->pos + 1;
-        while(isalpha(this->peek()) || this->peek() == '_') {
+        while(isalnum(this->peek()) || this->peek() == '_') {
             this->nextChar();
         }
         std::string tokText = this->source.substr(startPos, (this->pos + 1) - startPos);

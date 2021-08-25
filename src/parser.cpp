@@ -231,7 +231,7 @@ void Parser::statement(std::string scope) {
                                     sprintf(t, "char* %s", this->curToken.getText().c_str());
                                     args.insert(t);
                                 }
-                                this->locals[scope][this->curToken.getText()] = ftype;
+                                this->locals[name][this->curToken.getText()] = ftype;
                                 this->nextToken();
                                 if(this->checkToken(TOK_COMMA)) {
                                     this->nextToken();
